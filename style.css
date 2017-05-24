@@ -17,7 +17,8 @@ body {
 html, body, #map {
     height: 100%;
     font-weight: 100;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color:#333;
     font-size: 13px;
 }
 
@@ -29,7 +30,8 @@ a {
 h1 > a {
     text-decoration: none;
     float: left;
-    color: #fff
+    color: #fff;
+    font-weight: normal;
 }
 
 .sidebar-tabs figure {
@@ -73,13 +75,14 @@ html, .map-layout {
 .custom .leaflet-popup-tip,
 .custom .leaflet-popup-content-wrapper {
     background: rgba(225,225,225,.8);
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color:#333;
     font-weight: bold;
     font-size: 15px;
     margin-top: 15px;
 }
 .leaflet-container a {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #0a70ff;
 }

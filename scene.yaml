@@ -52,7 +52,7 @@ sources:
 #       bounds: [0.0000, 40.9799, 16.87499, 52.48278] # [w, s, e, n]
     osm:
         type: TopoJSON
-        url: https://tile.mapzen.com/mapzen/vector/v1/all/{z}/{x}/{y}.topojson?api_key=mapzen-7wSoxiC
+        url: https://tile.mapzen.com/mapzen/vector/v1/all/{z}/{x}/{y}.topojson?api_key=
         max_zoom: 16
 
 ##=========================================================================
