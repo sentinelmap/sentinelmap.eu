@@ -1,6 +1,6 @@
 var satAttr = 'Modified <a href="https://scihub.copernicus.eu/">Copernicus</a>' +
     ' Sentinel data 2016 by ' +
-    '<a href="http://sentinelmap.eu">SentinelMap</a>' ;
+    '<a href="https://www.sentinelmap.eu">SentinelMap</a>' ;
 
 var osmAttr = ' | © <a href="https://openstreetmap.org/copyright">OSM</a>' +
     ' contributors data by ' +
