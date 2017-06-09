@@ -27,7 +27,7 @@ var baseLayers = {
     "Sentinel-2": scLayer,
 };
 
-L.control.zoom({position: 'topright'}).addTo(map);
+L.control.zoom({position: 'bottomright'}).addTo(map);
 
 var hash = new L.Hash(map);
 
