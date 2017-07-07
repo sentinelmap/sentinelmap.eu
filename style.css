@@ -43,6 +43,10 @@ h1 > a {
     width: 32px;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 /* li a:active,
 li a:hover {
     background-color: #00d4aa;

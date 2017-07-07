@@ -30,6 +30,33 @@ var hash = new L.Hash(map);
 
 var sidebar = L.control.sidebar('sidebar').addTo(map);
 
+// Scene config controls
+
+function btn(ico_id, str_id, value) {
+    if (value) {old_icon = 'fa-toggle-on'} else {old_icon = 'fa-toggle-off'}
+    if (value) {new_icon = 'fa-toggle-off'} else {new_icon = 'fa-toggle-on'}
+    if (value) {status = 'off'} else {status = 'on'}
+    document.getElementById(ico_id).classList.remove(old_icon);
+    document.getElementById(ico_id).classList.add(new_icon);
+    document.getElementById(str_id).innerHTML = status;
+};
+
+document.getElementById('labels').addEventListener('click', function() {
+    var overlay = scene.config.global.labels_overlay;
+    btn('labels_toggle', 'labels_status', overlay);
+    if (overlay) {overlay = false} else {overlay = true};
+    scene.config.global.labels_overlay = overlay;
+    scene.updateConfig();
+});
+
+document.getElementById('roads').addEventListener('click', function() {
+    var overlay = scene.config.global.roads_overlay;
+    btn('roads_toggle', 'roads_status', overlay);
+    if (overlay) {overlay = false} else {overlay = true};
+    scene.config.global.roads_overlay = overlay;
+    scene.updateConfig();
+});
+
 // DEBUG
 /*
 scene.subscribe({
